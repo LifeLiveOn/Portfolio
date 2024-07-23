@@ -177,6 +177,7 @@ button:hover{
 }
 
 .projects-showcase {
+    min-width: 600px;
     background-color: #c8d7e8 !important;
     color:#518ad3;
     padding: 2% 0;
@@ -191,17 +192,17 @@ button:hover{
 .projects-container {
     background-color: #c8d7e8 !important;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    gap: 30px;
     margin-top: 20px;
+    align-items: center;
 }
 
 .project {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 600px;
     text-align: left;
     overflow: hidden;
     transition: transform 0.5s;
@@ -408,6 +409,11 @@ main nav{
     }
     .event {
         margin-top: 10px;
+    }
+
+    .project{
+        width:400px;
+        align-items: center;
     }
 
   /* blog */

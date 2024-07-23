@@ -443,7 +443,7 @@ main nav {
 
 @media screen and (max-width: 500px) {
     .header{
-        margin-left:calc(100% - 60%);
+        margin-left:calc(100% - 70%);
     }
     .about-short{
         margin-left:calc(100% - 90%);
@@ -453,6 +453,6 @@ main nav {
         display: none;
     }
     .footer-container{
-        margin-left:calc(100% - 60%);
+        margin-left:calc(100% - 70%);
     }
 }

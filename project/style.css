@@ -11,11 +11,16 @@
     --list-even:#74c77;
 }
 * {
+    background-color: var(--primary-color);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: var(--font-family);
     font-size: 16px;
+}
+
+header, footer {
+    width: 100%;
 }
 
 .block{
@@ -272,3 +277,6 @@ button:hover{
         margin-top: 10px;
     }
 }
+
+
+/* for blog.html */

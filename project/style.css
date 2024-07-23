@@ -86,7 +86,7 @@ button {
     padding: 9px 25px;
     background-color: var(--secondary-color) !important;
     border: none;
-    border-radius: 50px;
+    border-radius: 50px !important;
     cursor: pointer;
     color: var(--nav-text);
     font-weight: bold;
@@ -108,10 +108,16 @@ button:hover{
 }
 
 .profile {
-    justify-content: center;
+    
     text-align: center;
     grid-row-start: 1;
     grid-row-end: 3;
+}
+
+.profile .card{
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none!important;
 }
 
 .profile img {
@@ -125,6 +131,9 @@ button:hover{
     border: solid;
     border-width: thick;
     line-height: 2;
+    max-width: 700px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .event {
@@ -260,11 +269,12 @@ button:hover{
 }
 
 .card{
+    width: 500px;
     color:var(--nav-text) !important;
     border-style: solid !important;
-    border-radius: 5% !important;
-    border-width: 4px !important;
-    border-color: #102843 !important;
+    border-radius: 3% !important;
+    border-width: 6px !important;
+    border-color: #c8d7e8 !important;
 
 }
 .card a{
@@ -299,7 +309,7 @@ main nav{
     grid-column: 2/4;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .header {
         height: 100%;
     }
@@ -312,10 +322,11 @@ main nav{
     }
 
     .content {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
     }
 
     .about {
+        
         margin-top: 10px;
         grid-column-start: 1;
         text-align: center;

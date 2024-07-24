@@ -1,8 +1,8 @@
 body {
     font-family: 'Lato', sans-serif;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     height: 100%;
     width: 0;
     position: fixed;
@@ -12,57 +12,59 @@ body {
     background-color: rgba(8, 15, 48, 0.3);
     overflow-x: hidden;
     transition: 0.5s;
-  }
-  
-  .overlay-content {
+}
+
+.overlay-content {
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
-  }
-  
-  .overlay a {
+}
+
+.overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #fff;
     display: block;
     transition: 0.3s;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
+}
+
+.overlay a:hover,
+.overlay a:focus {
     color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
+}
+
+.overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
-  }
-  
-  /* Additional Mobile Styles */
-  @media screen and (max-width: 550px) {
-    .menu-toggle{
-        display: block !important;
+}
+
+/* Additional Mobile Styles */
+@media screen and (max-width: 550px) {
+    .overlay a {
+        font-size: 20px
     }
-    .overlay a {font-size: 20px}
+
     .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
     }
-      .nav__links {
-          display: none;
-      }
-  
-      .menu-toggle {
-          display: block !important;
-          cursor: pointer;
-          color: var(--nav-text);
-          font-size: 24px;
-          padding: 10px;
-      }
-  }
-  
+
+    .nav__links {
+        display: none;
+    }
+
+    .menu-toggle {
+        margin-left: 20%;
+        display: block !important;
+        cursor: pointer;
+        color: var(--nav-text);
+        font-size: 24px;
+        padding: 10px;
+    }
+}

@@ -45,6 +45,19 @@ body {
 
 /* Additional Mobile Styles */
 @media screen and (max-width: 550px) {
+    .header{
+        position:fixed;
+    }
+    .profile{
+        margin-top:15%;
+    }
+    .project-container {
+        flex-direction: column;
+    }
+    .project{
+        width:80%;
+    }
+
     .overlay a {
         font-size: 20px
     }

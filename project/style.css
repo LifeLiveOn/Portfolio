@@ -56,12 +56,15 @@ footer {
 
 /* Header */
 .header {
+    
     background-color: var(--primary-color) !important;
     padding-top: 10px;
     font-weight: 500;
     color: #edf0f1;
     text-decoration: none;
     z-index: -1;
+    overflow: hidden;
+
 }
 
 .header .nav__links {
@@ -76,6 +79,7 @@ footer {
     width: 90%;
     margin: auto;
 }
+
 
 .nav__links ul {
     display: flex;
@@ -98,6 +102,8 @@ footer {
 .nav__links a:hover {
     color: var(--hover-color);
 }
+
+
 
 /* Buttons */
 button {
@@ -198,6 +204,7 @@ button:hover {
 }
 
 .event-title {
+    line-height: 1.6;
     padding-left: 10px;
     grid-column: 2/2;
 }
@@ -222,7 +229,9 @@ button:hover {
 .projects-container {
     background-color: #c8d7e8 !important;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding-left:3%;
+    padding-right:3%;
     gap: 30px;
     margin-top: 5%;
     align-items: center;
@@ -418,10 +427,18 @@ main nav {
 
 /* Responsive Styles */
 @media screen and (max-width: 1200px) {
-    .header {
-        height: 100%;
+    .projects-container{
+        flex-direction: column;
     }
-
+    .header {
+        height:10%;
+        width:100%;
+        position: fixed;
+        z-index: 100;
+    }
+    .profile{
+        margin-top:5%;
+    }
     .header .nav__links {
         flex-direction: column;
     }
@@ -446,6 +463,9 @@ main nav {
         text-align: center;
         grid-row: inherit;
     }
+
+
+    
 
     .block {
         animation: none;
@@ -512,4 +532,13 @@ main nav {
         width: 100%;
         max-width: 100%;
     }
+}
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }

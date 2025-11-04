@@ -147,8 +147,9 @@ button:hover {
 }
 
 .profile img {
-    max-height: 400px;
-    width: auto;
+    max-height: 600px;
+    max-width: fit-content;
+    margin: auto;
 }
 
 /* About Section */

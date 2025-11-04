@@ -248,6 +248,10 @@ button:hover {
     text-align: left;
     overflow: hidden;
     transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 550px;
 }
 
 .project .button {
@@ -262,7 +266,10 @@ button:hover {
 
 .project-img {
     width: 100%;
-    height: auto;
+    height: 220px; 
+    object-fit: cover; 
+    display: block;
+    border-bottom: 2px solid #c8d7e8; 
 }
 
 .project h3 {

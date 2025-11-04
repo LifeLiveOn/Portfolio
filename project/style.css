@@ -279,6 +279,11 @@ button:hover {
     color: #83aedc;
 }
 
+.project-tags{
+    margin:auto;
+}
+
+
 .project p {
     padding: 0 15px 15px;
     font-size: 1em;

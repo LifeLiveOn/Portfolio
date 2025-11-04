@@ -251,17 +251,18 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 550px;
+    height: 800px;
 }
 
 .project .button {
-    margin-left: 50px !important;
+    margin-left: 20%;
+    margin-right:20%;
     margin-bottom: 5%;
 }
 
 .project:hover {
     transform: translateY(-10px);
-    scale: 1.1;
+    scale: 1.2;
 }
 
 .project-img {
@@ -438,7 +439,6 @@ main nav {
         flex-direction: column;
     }
     .header {
-        height:10%;
         width:100%;
         position: fixed;
         z-index: 100;
@@ -484,8 +484,13 @@ main nav {
     }
 
     .project {
-        width: 400px;
+        width: 600px;
         align-items: center;
+        height:auto;
+    }
+
+    .project-img {
+        height:300px;
     }
 
     /* Blog */
@@ -511,7 +516,7 @@ main nav {
 
     .profile img {
         max-width: 100%;
-        height: auto;
+        height: 300px;
     }
 
     .about-short {
@@ -526,6 +531,7 @@ main nav {
         width: 100%;
         max-width: 90%;
         margin: 10px 0;
+        height:auto;
     }
 
     .event-detail {
